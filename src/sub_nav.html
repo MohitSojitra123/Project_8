@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <!-- Tailwind CSS -->
+ <link href="./output.css" rel="stylesheet">
+ <!-- Tailwind CSS -->
+
+ <link rel="stylesheet" href="style.css">
+
+ <!-- Jquery -->
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+ <!-- Jquery -->
+
+ <!-- Remix ICon -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.1/remixicon.css" integrity="sha512-qCZncJ4Eg8NhDEWeYhMroBtRY/vizMiE0o9Wk7p2MPM7lAi1kSkhZuIkaYpsX+pjh1/7HqsdYBzIhVeCM3innw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <!-- Remix ICon -->
+<body>
+    <!-- Navigation Bar -->
+ 
+    <!-- Navigation Bar -->
+ <div class="nav_bar w-full h-[80px]  flex justify-between items-center px-[10px] sm:px-[20px] border-b-2 border-gray-500">
+    <div class="nav_left w-auto h-[100%]  flex justify-center items-center"><img src="./Asserts/nav_logo.svg" class="sm:w-[100%] sm:h-[80%] cursor-pointer" alt=""></div>
+    <div class="nav_center w-auto h-[100%]  text-xl hidden lg:flex justify-center items-center gap-[30px]">
+        <div class="navlink text-[#FF8A00] hover:cursor-pointer"><a href="index.html">Home</a></div>
+        <div class="navlink hover:cursor-pointer"><a href="Menu.html">Menu</a></div>
+        <div class="navlink hover:cursor-pointer"><a href="About_Us.html">About Us</a></div>
+        <div class="navlink "><a href="order_online.html">Order online</a></div>
+        <div class="navlink hover:cursor-pointer"><a href="Reservation.html">Reservation</a></div>
+        <div class="navlink hover:cursor-pointer"><a href="Contact_us.html">Contact us</a></div>
+    </div>
+    <div class="nav_right w-auto h-[100%] flex justify-center items-center gap-[15px] sm:gap-[30px] text-xl">
+        <div class="">
+            <i class="ri-shopping-cart-2-line text-2xl hover:cursor-pointer"></i><sup class="bg-red-600 text-white p-[0px_8px] rounded-[50px] text-xl">2</sup>
+        </div>
+        <div class="btn_hover2 border-2 border-transparent  bg-[#3FA72F] text-white rounded-[50px] p-[4px_15px] hidden sm:flex justify-center items-center">Log in</div>
+  
+        <div class="Side_menu w-auto h-[100%] lg:hidden flex justify-center items-center text-4xl px-[10px]">
+            <div class=""><i class="ri-function-line"></i></div>
+        </div>
+    </div>
+  </div>
+    <!-- Side Navbar -->
+    
+    <div class="side_navbar w-full h-auto flex flex-col justify-center items-center text-xl">
+      <a href="index.html" class="w-full h-auto"><div class="text-[#FF8A00] w-full h-auto py-[15px] flex justify-center items-center border-b-2 border-gray-500 hover:bg-black">Home</div></a>
+      <a href="Menu.html" class="w-full h-auto"><div class=" w-full h-auto py-[15px] flex justify-center items-center border-b-2 border-gray-500 hover:text-white hover:bg-black">Menu</div></a>
+      <a href="About_Us.html" class="w-full h-auto"><div class=" w-full h-auto py-[15px] flex justify-center items-center border-b-2 border-gray-500 hover:text-white hover:bg-black">About us</div></a>
+      <a href="order_online.html" class="w-full h-auto"><div class=" w-full h-auto py-[15px] flex justify-center items-center border-b-2 border-gray-500 hover:text-white hover:bg-black">Order online</div></a>
+      <a href="Reservation.html" class="w-full h-auto"><div class=" w-full h-auto py-[15px] flex justify-center items-center border-b-2 border-gray-500 hover:text-white hover:bg-black">Reservation</div></a>
+      <a href="Contact_us.html" class="w-full h-auto"><div class=" w-full h-auto py-[15px] flex justify-center items-center border-b-2 border-gray-500 hover:text-white hover:bg-black">Contact us</div></a>
+    </div>
+    <!-- Side Navbar -->
+   <!-- Navigation Bar -->
+
+    <!-- Section 1 -->
+ <div class="w-full h-auto flex justify-center items-center py-[15px] my-[5px]">
+    <div class="text-4xl font-serif font-semibold px-[15px] text-center text-[#311F09]">Menu</div>
+  </div>
+ <!-- Section 1 -->
+
+  <!-- Section 3 -->
+  <div class="w-full h-auto my-[20px] flex justify-center items-center flex-wrap gap-[25px_27px] px-[10px_20px] text-xl">
+    <div class="hover:text-white hover:bg-black p-[8px_20px] rounded-[50px] hover:rounded-[50px] border-2 border-black rounded-[50px]"><a href="Menu.html">All catagory</a></div>
+    <div class="cursor-pointer  text-white bg-black p-[8px_20px] hover:rounded-[50px] border-2 border-black rounded-[50px]"><a href="sub_nav.html">Dinner</a></div>
+    <div class="cursor-pointer  hover:text-white hover:bg-black p-[8px_20px] hover:rounded-[50px] border-2 border-black rounded-[50px]">Lunch</div>
+    <div class="cursor-pointer  hover:text-white hover:bg-black p-[8px_20px] hover:rounded-[50px] border-2 border-black rounded-[50px]">Dessert</div>
+    <div class="cursor-pointer  hover:text-white hover:bg-black p-[8px_20px] hover:rounded-[50px] border-2 border-black rounded-[50px]">Drink</div>
+  </div>
+   <!-- Section 3 -->
+
+   <!-- Section 4 -->
+    <div class="w-full h-auto py-[10px] pb-[20px] my-[23px] text-4xl flex justify-center items-center flex-col">
+        <div class="">PASTA</div>
+        <div class="w-[130px] h-[3px] bg-[#FF8A00] mt-[6px]"></div>
+    </div>
+   <!-- Section 4 -->
+
+   <!-- Section 5 -->
+   <div class="w-full h-auto  flex justify-center items-center flex-wrap gap-[30px_35px] px-[30px] lg:w-[75%] m-auto my-[20px]">
+
+
+    <div class="card1 card12 w-[250px] h-[445px]  flex justify-center items-center flex-col px-[5px] py-[5px] bg-[#FF8A00] rounded-[40px]">
+      <div class="w-[100%] h-[200px] "><img src="./Asserts/ps1.svg" class="w-[100%] h-[100%]" alt=""></div>
+      <div class="w-[100%] h-[225px]  flex flex-col justify-start items-center gap-[7px_0px]">
+          <div class="text-3xl font-semibold text-white">Spaghetti</div>
+          <div class="text-white flex justify-center items-center gap-[8px] text-xl">
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+          </div>
+          <div class="text-center px-[4px]  text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </div>
+          <div class="btns w-full h-auto  flex justify-between items-center px-[8px]">
+              <div class="text-2xl font-bold  text-white">$12.05</div>
+              <div class="btn123 text-[#FF8A00] p-[7px_15px] rounded-[50px] bg-white">Order now</div>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="card1 card12 w-[250px] h-[445px]  flex justify-center items-center flex-col px-[5px] py-[5px]">
+      <div class="w-[100%] h-[200px] "><img src="./Asserts/ps2.svg" class="w-[100%] h-[100%]" alt=""></div>
+      <div class="w-[100%] h-[225px]  flex flex-col justify-start items-center gap-[7px_0px]">
+          <div class="text-[#311F09] text-3xl font-semibold">Linguine</div>
+          <div class="text-[#FF8A00] flex justify-center items-center gap-[8px] text-xl">
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+          </div>
+          <div class="text-center px-[4px] text-[#59442B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </div>
+          <div class="btns w-full h-auto  flex justify-between items-center px-[8px]">
+              <div class="text-2xl font-bold text-[#311F09]">$14.00</div>
+              <div class="btn123 bg-[#FF8A00] p-[7px_15px] rounded-[50px] text-white">Order now</div>
+          </div>
+      </div>
+    </div>
+    <div class="card1 card12 w-[250px] h-[445px]  flex justify-center items-center flex-col px-[5px] py-[5px]">
+      <div class="w-[100%] h-[200px] "><img src="./Asserts/ps3.svg" class="w-[100%] h-[100%]" alt=""></div>
+      <div class="w-[100%] h-[225px]  flex flex-col justify-start items-center gap-[7px_0px]">
+          <div class="text-[#311F09] text-3xl font-semibold">Capellini</div>
+          <div class="text-[#FF8A00] flex justify-center items-center gap-[8px] text-xl">
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+          </div>
+          <div class="text-center px-[4px] text-[#59442B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </div>
+          <div class="btns w-full h-auto  flex justify-between items-center px-[8px]">
+              <div class="text-2xl font-bold text-[#311F09]">$12.05</div>
+              <div class="btn123 bg-[#FF8A00] p-[7px_15px] rounded-[50px] text-white">Order now</div>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="card1 card12 w-[250px] h-[445px]  flex justify-center items-center flex-col px-[5px] py-[5px]">
+      <div class="w-[100%] h-[200px] "><img src="./Asserts/ps4.svg" class="w-[100%] h-[100%]" alt=""></div>
+      <div class="w-[100%] h-[225px]  flex flex-col justify-start items-center gap-[7px_0px]">
+          <div class="text-[#311F09] text-3xl font-semibold">Fettuccine</div>
+          <div class="text-[#FF8A00] flex justify-center items-center gap-[8px] text-xl">
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+          </div>
+          <div class="text-center px-[4px] text-[#59442B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </div>
+          <div class="btns w-full h-auto  flex justify-between items-center px-[8px]">
+              <div class="text-2xl font-bold text-[#311F09]">$10.05</div>
+              <div class="btn123 bg-[#FF8A00] p-[7px_15px] rounded-[50px] text-white">Order now</div>
+          </div>
+      </div>
+    </div>
+
+
+
+    <div class="card1 card12 w-[250px] h-[445px]  flex justify-center items-center flex-col px-[5px] py-[5px]">
+      <div class="w-[100%] h-[200px] "><img src="./Asserts/ps5.svg" class="w-[100%] h-[100%]" alt=""></div>
+      <div class="w-[100%] h-[225px]  flex flex-col justify-start items-center gap-[7px_0px]">
+          <div class="text-[#311F09] text-3xl font-semibold">Bucatini</div>
+          <div class="text-[#FF8A00] flex justify-center items-center gap-[8px] text-xl">
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+          </div>
+          <div class="text-center px-[4px] text-[#59442B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </div>
+          <div class="btns w-full h-auto  flex justify-between items-center px-[8px]">
+              <div class="text-2xl font-bold text-[#311F09]">$19.05</div>
+              <div class="btn123 bg-[#FF8A00] p-[7px_15px] rounded-[50px] text-white">Order now</div>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="card1 card12 w-[250px] h-[445px]  flex justify-center items-center flex-col px-[5px] py-[5px]">
+      <div class="w-[100%] h-[200px] "><img src="./Asserts/f6.svg" class="w-[100%] h-[100%]" alt=""></div>
+      <div class="w-[100%] h-[225px]  flex flex-col justify-start items-center gap-[7px_0px]">
+          <div class="text-[#311F09] text-3xl font-semibold">Tortellini</div>
+          <div class="text-[#FF8A00] flex justify-center items-center gap-[8px] text-xl">
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+          </div>
+          <div class="text-center px-[4px] text-[#59442B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </div>
+          <div class="btns w-full h-auto  flex justify-between items-center px-[8px]">
+              <div class="text-2xl font-bold text-[#311F09]">$23.05</div>
+              <div class="btn123 bg-[#FF8A00] p-[7px_15px] rounded-[50px] text-white">Order now</div>
+          </div>
+      </div>
+    </div>
+
+    <div class="card1 card12 w-[250px] h-[445px]  flex justify-center items-center flex-col px-[5px] py-[5px]">
+        <div class="w-[100%] h-[200px] "><img src="./Asserts/ps7.svg" class="w-[100%] h-[100%]" alt=""></div>
+        <div class="w-[100%] h-[225px]  flex flex-col justify-start items-center gap-[7px_0px]">
+            <div class="text-[#311F09] text-3xl font-semibold">Fusilli</div>
+            <div class="text-[#FF8A00] flex justify-center items-center gap-[8px] text-xl">
+                <div class=""><i class="ri-star-fill"></i></div>
+                <div class=""><i class="ri-star-fill"></i></div>
+                <div class=""><i class="ri-star-fill"></i></div>
+                <div class=""><i class="ri-star-fill"></i></div>
+            </div>
+            <div class="text-center px-[4px] text-[#59442B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </div>
+            <div class="btns w-full h-auto  flex justify-between items-center px-[8px]">
+                <div class="text-2xl font-bold text-[#311F09]">$19.05</div>
+                <div class="btn123 bg-[#FF8A00] p-[7px_15px] rounded-[50px] text-white">Order now</div>
+            </div>
+        </div>
+      </div>
+
+      
+      <div class="card1 card12 w-[250px] h-[445px]  flex justify-center items-center flex-col px-[5px] py-[5px]">
+        <div class="w-[100%] h-[200px] "><img src="./Asserts/ps8.svg" class="w-[100%] h-[100%]" alt=""></div>
+        <div class="w-[100%] h-[225px]  flex flex-col justify-start items-center gap-[7px_0px]">
+            <div class="text-[#311F09] text-3xl font-semibold">Farfalle</div>
+            <div class="text-[#FF8A00] flex justify-center items-center gap-[8px] text-xl">
+                <div class=""><i class="ri-star-fill"></i></div>
+                <div class=""><i class="ri-star-fill"></i></div>
+                <div class=""><i class="ri-star-fill"></i></div>
+                <div class=""><i class="ri-star-fill"></i></div>
+            </div>
+            <div class="text-center px-[4px] text-[#59442B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </div>
+            <div class="btns w-full h-auto  flex justify-between items-center px-[8px]">
+                <div class="text-2xl font-bold text-[#311F09]">$19.05</div>
+                <div class="btn123 bg-[#FF8A00] p-[7px_15px] rounded-[50px] text-white">Order now</div>
+            </div>
+        </div>
+      </div>
+
+      
+      <div class="card1 card12 w-[250px] h-[445px]  flex justify-center items-center flex-col px-[5px] py-[5px]">
+        <div class="w-[100%] h-[200px] "><img src="./Asserts/ps9.svg" class="w-[100%] h-[100%]" alt=""></div>
+        <div class="w-[100%] h-[225px]  flex flex-col justify-start items-center gap-[7px_0px]">
+            <div class="text-[#311F09] text-3xl font-semibold">Penne Alla Vodak</div>
+            <div class="text-[#FF8A00] flex justify-center items-center gap-[8px] text-xl">
+                <div class=""><i class="ri-star-fill"></i></div>
+                <div class=""><i class="ri-star-fill"></i></div>
+                <div class=""><i class="ri-star-fill"></i></div>
+                <div class=""><i class="ri-star-fill"></i></div>
+            </div>
+            <div class="text-center px-[4px] text-[#59442B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </div>
+            <div class="btns w-full h-auto  flex justify-between items-center px-[8px]">
+                <div class="text-2xl font-bold text-[#311F09]">$19.05</div>
+                <div class="btn123 bg-[#FF8A00] p-[7px_15px] rounded-[50px] text-white">Order now</div>
+            </div>
+        </div>
+      </div>
+  
+</div>
+   <!-- Section 5 -->
+  
+    <!-- Page  -->
+    <div class="w-full h-auto my-[30px] py-[20px] hidden md:flex justify-center items-center">
+        <img src="./Asserts/page.svg" alt="">
+    </div>
+    <!-- Page  -->
+  
+   <!-- Section 6 -->
+   <div class="w-full h-auto py-[10px] pb-[20px] my-[23px] text-4xl flex justify-center items-center flex-col">
+    <div class="">PIZZA</div>
+    <div class="w-[130px] h-[3px] bg-[#FF8A00] mt-[6px]"></div>
+  </div>
+   <!-- Section 6 -->
+
+   <!-- Section 7 -->
+   <div class="w-full h-auto  flex justify-center items-center flex-wrap gap-[30px_35px] px-[30px] lg:w-[75%] m-auto my-[20px]">
+
+
+    <div class="card1 card12 w-[250px] h-[445px]  flex justify-center items-center flex-col px-[5px] py-[5px] bg-[#FF8A00] rounded-[40px]">
+      <div class="w-[100%] h-[200px] "><img src="./Asserts/pp1.svg" class="w-[100%] h-[100%]" alt=""></div>
+      <div class="w-[100%] h-[225px]  flex flex-col justify-start items-center gap-[7px_0px]">
+          <div class="text-3xl font-semibold text-white">Splitza Signature</div>
+          <div class="text-white flex justify-center items-center gap-[8px] text-xl">
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+          </div>
+          <div class="text-center px-[4px]  text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </div>
+          <div class="btns w-full h-auto  flex justify-between items-center px-[8px]">
+              <div class="text-2xl font-bold  text-white">$12.05</div>
+              <div class="btn123 text-[#FF8A00] p-[7px_15px] rounded-[50px] bg-white">Order now</div>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="card1 card12 w-[250px] h-[445px]  flex justify-center items-center flex-col px-[5px] py-[5px]">
+      <div class="w-[100%] h-[200px] "><img src="./Asserts/pp2.svg" class="w-[100%] h-[100%]" alt=""></div>
+      <div class="w-[100%] h-[225px]  flex flex-col justify-start items-center gap-[7px_0px]">
+          <div class="text-[#311F09] text-3xl font-semibold">Super Supreme</div>
+          <div class="text-[#FF8A00] flex justify-center items-center gap-[8px] text-xl">
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+          </div>
+          <div class="text-center px-[4px] text-[#59442B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </div>
+          <div class="btns w-full h-auto  flex justify-between items-center px-[8px]">
+              <div class="text-2xl font-bold text-[#311F09]">$14.00</div>
+              <div class="btn123 bg-[#FF8A00] p-[7px_15px] rounded-[50px] text-white">Order now</div>
+          </div>
+      </div>
+    </div>
+    <div class="card1 card12 w-[250px] h-[445px]  flex justify-center items-center flex-col px-[5px] py-[5px]">
+      <div class="w-[100%] h-[200px] "><img src="./Asserts/pp3.svg" class="w-[100%] h-[100%]" alt=""></div>
+      <div class="w-[100%] h-[225px]  flex flex-col justify-start items-center gap-[7px_0px]">
+          <div class="text-[#311F09] text-3xl font-semibold">Veggie Garden</div>
+          <div class="text-[#FF8A00] flex justify-center items-center gap-[8px] text-xl">
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+          </div>
+          <div class="text-center px-[4px] text-[#59442B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </div>
+          <div class="btns w-full h-auto  flex justify-between items-center px-[8px]">
+              <div class="text-2xl font-bold text-[#311F09]">$12.05</div>
+              <div class="btn123 bg-[#FF8A00] p-[7px_15px] rounded-[50px] text-white">Order now</div>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="card1 card12 w-[250px] h-[445px]  flex justify-center items-center flex-col px-[5px] py-[5px]">
+      <div class="w-[100%] h-[200px] "><img src="./Asserts/p4.svg" class="w-[100%] h-[100%]" alt=""></div>
+      <div class="w-[100%] h-[225px]  flex flex-col justify-start items-center gap-[7px_0px]">
+          <div class="text-[#311F09] text-2xl font-semibold">Double Beef Burger</div>
+          <div class="text-[#FF8A00] flex justify-center items-center gap-[8px] text-xl">
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+          </div>
+          <div class="text-center px-[4px] text-[#59442B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </div>
+          <div class="btns w-full h-auto  flex justify-between items-center px-[8px]">
+              <div class="text-2xl font-bold text-[#311F09]">$10.05</div>
+              <div class="btn123 bg-[#FF8A00] p-[7px_15px] rounded-[50px] text-white">Order now</div>
+          </div>
+      </div>
+    </div>
+
+
+
+    <div class="card1 card12 w-[250px] h-[445px]  flex justify-center items-center flex-col px-[5px] py-[5px]">
+      <div class="w-[100%] h-[200px] "><img src="./Asserts/p5.svg" class="w-[100%] h-[100%]" alt=""></div>
+      <div class="w-[100%] h-[225px]  flex flex-col justify-start items-center gap-[7px_0px]">
+          <div class="text-[#311F09] text-3xl font-semibold">Meat Lovers</div>
+          <div class="text-[#FF8A00] flex justify-center items-center gap-[8px] text-xl">
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+          </div>
+          <div class="text-center px-[4px] text-[#59442B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </div>
+          <div class="btns w-full h-auto  flex justify-between items-center px-[8px]">
+              <div class="text-2xl font-bold text-[#311F09]">$19.05</div>
+              <div class="btn123 bg-[#FF8A00] p-[7px_15px] rounded-[50px] text-white">Order now</div>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="card1 card12 w-[250px] h-[445px]  flex justify-center items-center flex-col px-[5px] py-[5px]">
+      <div class="w-[100%] h-[200px] "><img src="./Asserts/p6.svg" class="w-[100%] h-[100%]" alt=""></div>
+      <div class="w-[100%] h-[225px]  flex flex-col justify-start items-center gap-[7px_0px]">
+          <div class="text-[#311F09] text-3xl font-semibold">Extravaganzza</div>
+          <div class="text-[#FF8A00] flex justify-center items-center gap-[8px] text-xl">
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+              <div class=""><i class="ri-star-fill"></i></div>
+          </div>
+          <div class="text-center px-[4px] text-[#59442B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </div>
+          <div class="btns w-full h-auto  flex justify-between items-center px-[8px]">
+              <div class="text-2xl font-bold text-[#311F09]">$23.05</div>
+              <div class="btn123 bg-[#FF8A00] p-[7px_15px] rounded-[50px] text-white">Order now</div>
+          </div>
+      </div>
+    </div>
+
+    <div class="card1 card12 w-[250px] h-[445px]  flex justify-center items-center flex-col px-[5px] py-[5px]">
+        <div class="w-[100%] h-[200px] "><img src="./Asserts/p7.svg" class="w-[100%] h-[100%]" alt=""></div>
+        <div class="w-[100%] h-[225px]  flex flex-col justify-start items-center gap-[7px_0px]">
+            <div class="text-[#311F09] text-3xl font-semibold">Meat & Meat</div>
+            <div class="text-[#FF8A00] flex justify-center items-center gap-[8px] text-xl">
+                <div class=""><i class="ri-star-fill"></i></div>
+                <div class=""><i class="ri-star-fill"></i></div>
+                <div class=""><i class="ri-star-fill"></i></div>
+                <div class=""><i class="ri-star-fill"></i></div>
+            </div>
+            <div class="text-center px-[4px] text-[#59442B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </div>
+            <div class="btns w-full h-auto  flex justify-between items-center px-[8px]">
+                <div class="text-2xl font-bold text-[#311F09]">$19.05</div>
+                <div class="btn123 bg-[#FF8A00] p-[7px_15px] rounded-[50px] text-white">Order now</div>
+            </div>
+        </div>
+      </div>
+
+      
+      <div class="card1 card12 w-[250px] h-[445px]  flex justify-center items-center flex-col px-[5px] py-[5px]">
+        <div class="w-[100%] h-[200px] "><img src="./Asserts/p8.svg" class="w-[100%] h-[100%]" alt=""></div>
+        <div class="w-[100%] h-[225px]  flex flex-col justify-start items-center gap-[7px_0px]">
+            <div class="text-[#311F09] text-3xl font-semibold">Meatzza</div>
+            <div class="text-[#FF8A00] flex justify-center items-center gap-[8px] text-xl">
+                <div class=""><i class="ri-star-fill"></i></div>
+                <div class=""><i class="ri-star-fill"></i></div>
+                <div class=""><i class="ri-star-fill"></i></div>
+                <div class=""><i class="ri-star-fill"></i></div>
+            </div>
+            <div class="text-center px-[4px] text-[#59442B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </div>
+            <div class="btns w-full h-auto  flex justify-between items-center px-[8px]">
+                <div class="text-2xl font-bold text-[#311F09]">$19.05</div>
+                <div class="btn123 bg-[#FF8A00] p-[7px_15px] rounded-[50px] text-white">Order now</div>
+            </div>
+        </div>
+      </div>
+
+      
+      <div class="card1 card12 w-[250px] h-[445px]  flex justify-center items-center flex-col px-[5px] py-[5px]">
+        <div class="w-[100%] h-[200px] "><img src="./Asserts/p9.svg" class="w-[100%] h-[100%]" alt=""></div>
+        <div class="w-[100%] h-[225px]  flex flex-col justify-start items-center gap-[7px_0px]">
+            <div class="text-[#311F09] text-3xl font-semibold">Tuna Delight</div>
+            <div class="text-[#FF8A00] flex justify-center items-center gap-[8px] text-xl">
+                <div class=""><i class="ri-star-fill"></i></div>
+                <div class=""><i class="ri-star-fill"></i></div>
+                <div class=""><i class="ri-star-fill"></i></div>
+                <div class=""><i class="ri-star-fill"></i></div>
+            </div>
+            <div class="text-center px-[4px] text-[#59442B]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas consequat mi eget auctor aliquam, diam. </div>
+            <div class="btns w-full h-auto  flex justify-between items-center px-[8px]">
+                <div class="text-2xl font-bold text-[#311F09]">$19.05</div>
+                <div class="btn123 bg-[#FF8A00] p-[7px_15px] rounded-[50px] text-white">Order now</div>
+            </div>
+        </div>
+      </div>
+  
+</div>
+   <!-- Section 7 -->
+
+    <!-- Page  -->
+    <div class="w-full h-auto my-[30px] py-[20px] hidden md:flex justify-center items-center">
+        <img src="./Asserts/page.svg" alt="">
+    </div>
+    <!-- Page  -->
+ 
+      <!-- Section 8 -->
+   <div class="w-full h-auto bg-[#311F09] flex justify-center items-start flex-wrap gap-[30px_10px] px-[15px] py-[40px]">
+
+    <div class="w-[260px] h-auto flex flex-col justify-center items-start px-[20px] py-[15px] gap-[20px]">
+      <div class=""><img src="./Asserts/foot_logo.svg" alt=""></div>
+      <div class="text-xl text-[#E3E2E0]">Viverra gravida morbi egestas facilisis tortor netus non duis tempor. </div>
+      <div class="flex justify-center items-center gap-[20px]">
+        <div class=""><img src="./Asserts/twitter.svg" class="w-[50px] h-[50px]" alt=""></div>
+        <div class=""><img src="./Asserts/Instagram.svg" class="w-[50px] h-[50px] alt=""></div>
+        <div class=""><img src="./Asserts/Facebook.svg" class="w-[50px] h-[50px] alt=""></div>
+      </div>
+    </div>
+
+
+    <div class="w-[260px] h-auto text-xl text-[#E3E2E0] flex justify-center items-start lg:items-center flex-col px-[20px] py-[15px] gap-[13px]">
+        <div class=" text-[#FF8A00] text-2xl font-semibold">Page</div>
+        <div class="">Home</div>
+        <div class="">Menu</div>
+        <div class="">Order online</div>
+        <div class="">Catering</div>
+        <div class="">Reservation</div>
+    </div>
+
+    <div class="w-[260px] h-auto text-xl text-[#E3E2E0] flex justify-center  items-start lg:items-center flex-col px-[20px] py-[15px] gap-[13px]">
+        <div class=" text-[#FF8A00] text-2xl font-semibold">Information</div>
+        <div class="">About us</div>
+        <div class="">Testimonial</div>
+        <div class="">Event</div>
+    </div>
+
+
+    <div class="w-[260px] h-auto text-xl text-[#E3E2E0] flex justify-center  items-start flex-col px-[20px] py-[15px] gap-[13px]">
+        <div class=" text-[#FF8A00] text-2xl font-semibold">Get in touch</div>
+        <div class="w-[300px]">3247 Johnson Ave, Bronx, NY 10463, Amerika Serikat</div>
+        <div class="">delizioso@gmail.com</div>
+        <div class="">+123 4567 8901</div>
+    </div>
+ </div>
+<!-- Section 8 -->
+
+<!-- Section 9 -->
+ <div class="w-full h-auto py-[20px] px-[12px] flex justify-center items-center text-center text-xl text-[#E3E2E0] bg-[#311F09]">Copyright &copy; 2022 Delizioso</div>
+<!-- Section 9 -->
+
+</body>
+<script>
+    jQuery.noConflict();
+    jQuery(document).ready(function($){
+        $(".side_navbar").hide();
+
+        $(".ri-function-line").click(function(){
+            $('.side_navbar').slideToggle(700);
+            $(this).toggleClass("ri-function-line  ri-function-fill");
+        })
+    })
+</script>
+</html>

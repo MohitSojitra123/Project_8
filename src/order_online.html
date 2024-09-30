@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    
+    <!-- TailWind CSS -->
+    <link href="./output.css" rel="stylesheet">
+    <!-- TailWind CSS -->
+
+    <link rel="stylesheet" href="style.css">
+
+     <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- Jquery -->
+
+  <!-- Remix ICon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.1/remixicon.css" integrity="sha512-qCZncJ4Eg8NhDEWeYhMroBtRY/vizMiE0o9Wk7p2MPM7lAi1kSkhZuIkaYpsX+pjh1/7HqsdYBzIhVeCM3innw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Remix ICon -->
+</head>
+<body>
+    <!-- Navigation Bar -->
+ <div class="nav_bar w-full h-[80px]  flex justify-between items-center px-[10px] sm:px-[20px] border-b-2 border-gray-500">
+    <div class="nav_left w-auto h-[100%]  flex justify-center items-center"><img src="./Asserts/nav_logo.svg" class="sm:w-[100%] sm:h-[80%] cursor-pointer" alt=""></div>
+    <div class="nav_center w-auto h-[100%]  text-xl hidden lg:flex justify-center items-center gap-[30px]">
+        <div class="navlink text-[#FF8A00] hover:cursor-pointer"><a href="index.html">Home</a></div>
+        <div class="navlink hover:cursor-pointer"><a href="Menu.html">Menu</a></div>
+        <div class="navlink hover:cursor-pointer"><a href="About_Us.html">About Us</a></div>
+        <div class="navlink "><a href="order_online.html">Order online</a></div>
+        <div class="navlink hover:cursor-pointer"><a href="Reservation.html">Reservation</a></div>
+        <div class="navlink hover:cursor-pointer"><a href="Contact_us.html">Contact us</a></div>
+    </div>
+    <div class="nav_right w-auto h-[100%] flex justify-center items-center gap-[15px] sm:gap-[30px] text-xl">
+        <div class="">
+            <i class="ri-shopping-cart-2-line text-2xl hover:cursor-pointer"></i><sup class="bg-red-600 text-white p-[0px_8px] rounded-[50px] text-xl">2</sup>
+        </div>
+        <div class="btn_hover2 border-2 border-transparent  bg-[#3FA72F] text-white rounded-[50px] p-[4px_15px] hidden sm:flex justify-center items-center">Log in</div>
+  
+        <div class="Side_menu w-auto h-[100%] lg:hidden flex justify-center items-center text-4xl px-[10px]">
+            <div class=""><i class="ri-function-line"></i></div>
+        </div>
+    </div>
+  </div>
+    <!-- Side Navbar -->
+    
+    <div class="side_navbar w-full h-auto flex flex-col justify-center items-center text-xl">
+      <a href="index.html" class="w-full h-auto"><div class="text-[#FF8A00] w-full h-auto py-[15px] flex justify-center items-center border-b-2 border-gray-500 hover:bg-black">Home</div></a>
+      <a href="Menu.html" class="w-full h-auto"><div class=" w-full h-auto py-[15px] flex justify-center items-center border-b-2 border-gray-500 hover:text-white hover:bg-black">Menu</div></a>
+      <a href="About_Us.html" class="w-full h-auto"><div class=" w-full h-auto py-[15px] flex justify-center items-center border-b-2 border-gray-500 hover:text-white hover:bg-black">About us</div></a>
+      <a href="order_online.html" class="w-full h-auto"><div class=" w-full h-auto py-[15px] flex justify-center items-center border-b-2 border-gray-500 hover:text-white hover:bg-black">Order online</div></a>
+      <a href="Reservation.html" class="w-full h-auto"><div class=" w-full h-auto py-[15px] flex justify-center items-center border-b-2 border-gray-500 hover:text-white hover:bg-black">Reservation</div></a>
+      <a href="Contact_us.html" class="w-full h-auto"><div class=" w-full h-auto py-[15px] flex justify-center items-center border-b-2 border-gray-500 hover:text-white hover:bg-black">Contact us</div></a>
+    </div>
+    <!-- Side Navbar -->
+   <!-- Navigation Bar -->
+</body>
+
+<script>
+    jQuery.noConflict();
+    jQuery(document).ready(function($){
+        $(".side_navbar").hide();
+
+        $(".ri-function-line").click(function(){
+            $('.side_navbar').slideToggle(700);
+            $(this).toggleClass("ri-function-line  ri-function-fill");
+        })
+    })
+</script>
+
+</html>

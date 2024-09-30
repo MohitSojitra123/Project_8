@@ -1,0 +1,40 @@
+.card1{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.card12:hover{
+    background-color: #FF8A00;
+    border-radius: 40px; 
+    cursor: pointer;
+    
+    .btn123{
+        color: #FF8A00;
+        background-color: white;
+    }
+
+    div{
+        color: white;
+    }
+    
+}
+
+.navlink:hover{
+     cursor: pointer;
+     color:#FF8A00;
+}
+
+.btn_hover1:hover{
+    background-color: transparent;
+    border:2px solid #FF8A00;
+    border-radius: 50px;
+    color: #FF8A00;
+    cursor: pointer;
+}
+
+.btn_hover2:hover{
+    background-color: transparent;
+    border:2px solid #3FA72F;
+    border-radius: 50px;
+    color: #3FA72F;
+    cursor: pointer;
+}

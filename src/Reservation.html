@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    .body1{
+        background-color:rgba(0, 0, 0, 0.648);
+    }
+
+    .body2{
+        background-color:white;
+    }
+
+    .inner_pop3{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border-radius: 30px;
+    }
+</style>
+
+ <!-- Tailwind CSS -->
+ <link href="./output.css" rel="stylesheet">
+ <!-- Tailwind CSS -->
+
+ <link rel="stylesheet" href="style.css">
+
+ <!-- Jquery -->
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+ <!-- Jquery -->
+
+ <!-- Remix ICon -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.1/remixicon.css" integrity="sha512-qCZncJ4Eg8NhDEWeYhMroBtRY/vizMiE0o9Wk7p2MPM7lAi1kSkhZuIkaYpsX+pjh1/7HqsdYBzIhVeCM3innw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <!-- Remix ICon -->
+<body class="relative">
+    
+  <!-- Navigation Bar -->
+ <div class="nav_bar w-full h-[80px]  flex justify-between items-center px-[10px] sm:px-[20px] border-b-2 border-gray-500">
+    <div class="nav_left w-auto h-[100%]  flex justify-center items-center"><img src="./Asserts/nav_logo.svg" class="sm:w-[100%] sm:h-[80%] cursor-pointer" alt=""></div>
+    <div class="nav_center w-auto h-[100%]  text-xl hidden lg:flex justify-center items-center gap-[30px]">
+        <div class="navlink text-[#FF8A00] hover:cursor-pointer"><a href="index.html">Home</a></div>
+        <div class="navlink hover:cursor-pointer"><a href="Menu.html">Menu</a></div>
+        <div class="navlink hover:cursor-pointer"><a href="About_Us.html">About Us</a></div>
+        <div class="navlink "><a href="order_online.html">Order online</a></div>
+        <div class="navlink hover:cursor-pointer"><a href="Reservation.html">Reservation</a></div>
+        <div class="navlink hover:cursor-pointer"><a href="Contact_us.html">Contact us</a></div>
+    </div>
+    <div class="nav_right w-auto h-[100%] flex justify-center items-center gap-[15px] sm:gap-[30px] text-xl">
+        <div class="">
+            <i class="ri-shopping-cart-2-line text-2xl hover:cursor-pointer"></i><sup class="bg-red-600 text-white p-[0px_8px] rounded-[50px] text-xl">2</sup>
+        </div>
+        <div class="btn_hover2 border-2 border-transparent  bg-[#3FA72F] text-white rounded-[50px] p-[4px_15px] hidden sm:flex justify-center items-center">Log in</div>
+  
+        <div class="Side_menu w-auto h-[100%] lg:hidden flex justify-center items-center text-4xl px-[10px]">
+            <div class=""><i class="ri-function-line"></i></div>
+        </div>
+    </div>
+  </div>
+    <!-- Side Navbar -->
+    
+    <div class="side_navbar w-full h-auto flex flex-col justify-center items-center text-xl">
+      <a href="index.html" class="w-full h-auto"><div class="text-[#FF8A00] w-full h-auto py-[15px] flex justify-center items-center border-b-2 border-gray-500 hover:bg-black">Home</div></a>
+      <a href="Menu.html" class="w-full h-auto"><div class=" w-full h-auto py-[15px] flex justify-center items-center border-b-2 border-gray-500 hover:text-white hover:bg-black">Menu</div></a>
+      <a href="About_Us.html" class="w-full h-auto"><div class=" w-full h-auto py-[15px] flex justify-center items-center border-b-2 border-gray-500 hover:text-white hover:bg-black">About us</div></a>
+      <a href="order_online.html" class="w-full h-auto"><div class=" w-full h-auto py-[15px] flex justify-center items-center border-b-2 border-gray-500 hover:text-white hover:bg-black">Order online</div></a>
+      <a href="Reservation.html" class="w-full h-auto"><div class=" w-full h-auto py-[15px] flex justify-center items-center border-b-2 border-gray-500 hover:text-white hover:bg-black">Reservation</div></a>
+      <a href="Contact_us.html" class="w-full h-auto"><div class=" w-full h-auto py-[15px] flex justify-center items-center border-b-2 border-gray-500 hover:text-white hover:bg-black">Contact us</div></a>
+    </div>
+    <!-- Side Navbar -->
+   <!-- Navigation Bar -->
+
+ <!-- Section 1 -->
+  <div class="dark">
+
+      <div class="w-full h-auto sm:h-[50vh] md:h-auto lg:h-[80vh] flex flex-col sm:flex-row my-[20px]">
+          <div class="w-full h-auto sm:w-[50%] md:w-[50%] md:h-auto lg:w-[50%] sm:h-[100%]  flex justify-center items-center ">
+              <div class=""><img src="./Asserts/coll3.svg" class="w-[100%] h-[100%]" alt=""></div>
+            </div>
+            <div class="w-full h-auto sm:w-[50%] md:w-[50%] md:h-auto py-[10px] lg:w-[50%] sm:h-[100%] flex justify-center items-center">
+                <div class="w-[100%] h-[100%] lg:w-[90%] lg:h-[90%]  flex flex-col justify-center items-center sm:items-start px-[15px] gap-[20px_0px] sm:gap-[18px_0px] md:gap-[20px_0px] lg:gap-[35px_0px]">
+                    <div class="text-3xl sm:text-3xl md:text-3xl lg:text-5xl font-bold font-serif text-[#311F09]">Book a table</div>
+                    <div class="card1 w-[300px] sm:w-[300px] md:w-[350px] h-[50px] sm:h-[50px] md:h-[50px] lg:h-[57px] rounded-[50px] border-2 border-gray-500 flex justify-between items-center px-[15px]">
+                        <div class="text-[#A0978C] text-[20px] sm:text-[21px] md:text-2xl">Date</div>
+                        <div class="text-[29px] sm:text-[30px] md:text-3xl"><i class="ri-skip-down-line"></i></div>
+                    </div>
+                    <div class="card1 w-[300px] sm:w-[300px] md:w-[350px] h-[50px] sm:h-[50px] md:h-[50px] lg:h-[57px] rounded-[50px] border-2 border-gray-500 flex justify-between items-center px-[15px]">
+                        <div class="text-[#A0978C] text-[20px] sm:text-[21px] md:text-2xl">Time</div>
+                        <div class="text-[29px] sm:text-[30px] md:text-3xl"><i class="ri-skip-down-line"></i></div>
+                    </div>
+                    <div class="card1 w-[300px] sm:w-[300px] md:w-[350px] h-[50px] sm:h-[50px]  md:h-[50px] lg:h-[57px] rounded-[50px] border-2 border-gray-500 flex justify-between items-center px-[15px]">
+            <div class="text-[#A0978C] text-[20px] sm:text-[21px] md:text-2xl">Party size</div>
+            <div class="text-[29px] sm:text-[30px] md:text-3xl"><i class="ri-skip-down-line"></i></div>
+        </div>
+        <div class="book_now w-[300px] sm:w-[300px] md:w-[350px] h-[45px] lg:h-[48px] px-[20px] bg-[#FF8A00] border-2 border-transparent text-white rounded-[10px] text-[20px] sm:text-[21px] md:text-2xl lg:text-[25px] flex justify-center items-center hover:cursor-pointer hover:bg-white hover:text-[#FF8A00] hover:border-[#FF8A00]">Book now</div>
+    </div>
+    </div>
+  </div>
+ <!-- Section 1 -->
+</div>
+
+ 
+ <!-- Section 2 -->
+  <!-- POP 1 -->
+ <div class="pop1 w-[100%] h-[1000px] flex justify-center items-center absolute  top-[350px] sm:top-[400px] md:top-[100px] left-0">
+     <div class="inner_pop3 w-[95%] h-auto py-[20px] bg-white">
+                     
+            <div class="w-full h-auto  flex justify-center items-center text-2xl">
+                <div class="">
+                    <i class="ri-close-large-line pop1_close  rounded-[30px] text-white bg-blue-500 hover:bg-white hover:text-blue-500 border-2 border-transparent hover:border-blue-500  p-[10px] sm:p-[15px]"></i>
+                </div>
+            </div>
+            
+            <div class="w-full h-[80px] hidden sm:flex justify-between items-center px-[10px]">
+                <div class="w-[150px] h-auto hidden sm:flex"><img src="./Asserts/nav_logo.svg"  class="w-[100%] h-auto"></div>
+                <div class="text-white flex justify-center items-center gap-[10px]">
+                    <div class="bg-[#FF8A00] w-[100px] h-[40px] rounded-[20px] hidden sm:flex justify-center items-center">Sign in</div>
+                    <div class="bg-[#3FA72F] w-[100px] h-[40px] rounded-[20px] hidden sm:flex justify-center items-center">Sign up</div>
+                </div>
+            </div>
+            
+            
+            <div class="text-[#311F09] text-center w-full h-auto my-[10px] text-3xl font-bold sm:text-4xl">Reservation</div> 
+            
+            <div class="px-[10px] text-xl my-[10px] sm:text-2xl  w-[90%] m-auto rounded-[10px] py-[10px] flex justify-center items-center text-center">Due to limited availability, we can hold this table for you for 5:00 minutes</div>
+            
+            <div class="w-[90%] h-auto py-[20px]  m-auto flex justify-center items-start flex-wrap gap-[10px_30px]">
+                
+                <!-- 1 -->
+                <div class="w-[300px] h-auto sm:h-[640px]  py-[5px]">
+                   
+                    <div class="text-2xl font-bold text-[#5C4529] my-[10px]">Data order</div>
+                    
+                    <div class="w-full h-auto px-[5px] ] space-y-3 mt-[10px]">
+                        
+                        <div class="w-full h-[40px]"><input type="text" class="placeholder:text-[#A0978C] w-[100%] h-[100%] rounded-[20px] border-2 border-[#FF8A00] outline-none pl-[10px]" placeholder="First name"></div>
+                        
+                        <div class="w-full h-[40px]"><input type="text" class="placeholder:text-[#A0978C] w-[100%] h-[100%] rounded-[20px] border-2 border-[#FF8A00] outline-none pl-[10px]" placeholder="Last name"></div>
+                        
+                        <div class="w-full h-[40px]"><input type="text" class="placeholder:text-[#A0978C] w-[100%] h-[100%] rounded-[20px] border-2 border-[#FF8A00] outline-none pl-[10px]" placeholder="Email address"></div>
+                        
+                        <div class="w-full h-[100px]"><input type="text" class="placeholder:text-[#A0978C] w-[100%] h-[100%] rounded-[20px] border-2 border-[#FF8A00] outline-none pl-[10px]" placeholder="Add a special request"></div>
+                        
+                        
+                        <div class="text-[18px] my-[10px] py-[15px]"><input type="radio" class="w-[20px] h-[20px]">&nbsp;Sign me up to receive dining offers and news from this restaurant by email.</div>
+                        
+                        
+                        <div class="rr1 bg-[#FF8A00] text-white h-[40px] flex justify-center items-center rounded-[10px] text-[18px] hover:border-[#FF8A00] hover:text-[#FF8A00] border-2 border-transparent hover:bg-transparent my-[20px] hover:cursor-pointer">Confirm reservation</div>
+                        
+                        
+                    </div>
+                    
+                    
+                </div>
+                
+                
+                <!-- 2 -->
+                <div class="w-[300px] h-auto sm:h-[640px] py-[5px]">
+                    
+                    <div class="space-y-2">
+                        
+                        <div class="text-2xl font-bold text-[#5C4529] my-[10px]">Reservation detail</div>
+                        
+                        <div class="flex items-center gap-[10px] justify-start pl-[20px]">
+                            <div class=""><img src="./Asserts/icon3.svg" alt=""></div>
+                           <div class="text-[#5C4529] text-[18px] gap-[10px] font-semibold">Saturday, 28 february 2022</div>
+                        </div>
+                        <div class="flex items-center gap-[10px] justify-start pl-[20px]">
+                           <div class=""><img src="./Asserts/Icon2.svg" alt=""></div>
+                           <div class="text-[#5C4529] text-[18px] gap-[10px] font-semibold">04:30 pm</div>
+                        </div>
+                        <div class="flex items-center gap-[10px] justify-start pl-[20px]">
+                           <div class=""><img src="./Asserts/icon1.svg" alt=""></div>
+                           <div class="text-[#5C4529] text-[18px] gap-[10px] font-semibold">2 people (Standar seating)</div>
+                        </div>
+                    
+                    </div>
+
+                    <div class="flex flex-col gap-[20px] px-[5px] my-[10px]">
+                        <div class="text-[#5C4529] text-2xl font-bold ">Restaurant informations</div>
+                        
+                        <div class="text-[17px]">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                        </div>
+                        
+                        <div class="text-[17px]">
+                            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam.
+                        </div>
+                    
+                    </div>
+                
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+ <!-- Section 2 -->
+
+ <!-- Section 3 -->
+  <!-- POP 2 -->
+
+   <div class="pop2 w-[100%] h-auto py-[10px] absolute top-[100px] sm:top-[100px] md:top-[130px]  left-0 flex justify-center items-center">
+
+    <div class="inner_pop3 w-[90%] h-[100%] px-[5px] bg-white">
+
+        <div class="w-full h-auto my-[20px] flex justify-center items-center text-2xl">
+            <div class="">
+                <i class="ri-close-large-line rounded-[30px] pop2_close text-white bg-blue-500 hover:bg-white hover:text-blue-500 border-2 border-transparent hover:border-blue-500  p-[10px] sm:p-[15px]"></i>
+            </div>
+        </div>
+        
+        <div class="w-full h-[80px] hidden sm:flex justify-between items-center px-[10px]">
+            <div class="w-[150px] h-auto hidden sm:flex"><img src="./Asserts/nav_logo.svg"  class="w-[100%] h-auto"></div>
+            <div class="text-white flex justify-center items-center gap-[10px]">
+                <div class="bg-[#FF8A00] w-[100px] h-[40px] rounded-[20px] hidden sm:flex justify-center items-center">Sign in</div>
+                <div class="bg-[#3FA72F] w-[100px] h-[40px] rounded-[20px] hidden sm:flex justify-center items-center">Sign up</div>
+            </div>
+        </div>
+
+        <div class="w-full h-auto flex justify-center items-center px-[10px]"><img src="./Asserts/pop2.svg" alt=""></div>
+
+        <div class="w-full h-auto flex justify-center items-center text-2xl font-bold py-[10px]">Reservation detail</div>
+
+        <div class="w-full h-auto flex justify-center items-center px-[10px] flex-wrap gap-[20px_30px]">
+
+            <div class="w-[300px] flex justify-start items-center gap-[30px_10px]">
+                <div class=""><img src="./Asserts/icon1.svg" alt=""></div>
+                <div class="text-[#5C4529] text-[17px] font-semibold">2 people (Standar seating)</div>
+            </div>
+
+            <div class="w-[300px] flex justify-start items-center gap-[30px_10px]">
+                <div class=""><img src="./Asserts/Icon2.svg" alt=""></div>
+                <div class="text-[#5C4529] text-[17px] font-semibold">04:30 pm</div>
+            </div>
+
+            <div class="w-[300px] flex justify-start items-center gap-[30px_10px]">
+                <div class=""><img src="./Asserts/Icon3.svg" alt=""></div>
+                <div class="text-[#5C4529] text-[17px] font-semibold">Saturday, 28 february 2022</div>
+            </div>
+        </div>
+
+        <div class="w-full h-auto py-[10px] sm:px-[20px] my-[10px] rounded-[10px] text-[18px] sm:text-xl bg-[#8AEAFF] text-center">Due to limited availability, we can hold this table for you for 5:00 minutes</div>
+
+        <div class="w-full h-auto py-[10px] text-2xl font-[#8AEAFF] flex justify-center items-center font-bold">Data order</div>
+
+
+        <div class="w-full h-auto flex justify-center items-center flex-wrap space-y-3">
+
+            <div class="w-full sm:w-[50%] h-[40px] ml-[10px]"><input type="text" class="placeholder:text-[#A0978C] w-[100%] h-[100%] rounded-[20px] border-2 border-[#FF8A00] outline-none pl-[10px]" placeholder="First name"></div>
+
+            <div class="w-full sm:w-[50%] h-[40px] ml-[10px]"><input type="text" class="placeholder:text-[#A0978C] w-[100%] h-[100%] rounded-[20px] border-2 border-[#FF8A00] outline-none pl-[10px]" placeholder="Last name"></div>
+                        
+            
+            <div class="w-full sm:w-[50%] h-[40px] ml-[10px]"><input type="text" class="placeholder:text-[#A0978C] w-[100%] h-[100%] rounded-[20px] border-2 border-[#FF8A00] outline-none pl-[10px]" placeholder="Email address"></div>
+            
+            <div class="w-full sm:w-[50%] h-[40px] ml-[10px]"><input type="text" class="placeholder:text-[#A0978C] w-[100%] h-[100%] rounded-[20px] border-2 border-[#FF8A00] outline-none pl-[10px]" placeholder="Phone Number"></div>
+
+            <div class="w-full sm:w-[50%] h-[100px] ml-[10px]"><input type="text" class="placeholder:text-[#A0978C] w-[100%] h-[100%] rounded-[20px] border-2 border-[#FF8A00] outline-none pl-[10px]" placeholder="Add a special request"></div>
+            
+        </div>
+
+            <div class="rr1 rr123 w-[250px] m-auto bg-[#FF8A00] text-white h-[40px] flex justify-center items-center rounded-[10px] text-[18px] hover:border-[#FF8A00] hover:text-[#FF8A00] border-2 border-transparent hover:bg-transparent my-[20px] hover:cursor-pointer">Confirm reservation</div>
+
+        <div class="w-full h-auto  my-[15px] flex flex-wrap justify-between items-center">
+
+            <div class="w-full md:w-[45%] h-auto space-y-2  py-[15px]">
+
+                <div class="flex justify-start items-center gap-[10px]">
+                    <div class=""><input type="radio" class="w-[30px] h-[30px] flex justify-center items-center"></div>
+                    <div class="text-[18px] sm:text-xl">I agree with what is stated above</div>
+                </div>
+                <div class="flex justify-start items-center gap-[10px]">
+                    <div class=""><input type="radio" class="w-[30px] h-[30px] flex justify-center items-center"></div>
+                    <div class="text-[18px] sm:text-xl">Sign me up to receive dining offers and news from this restaurant by email.</div>
+                </div>
+                <div class="flex justify-start items-center gap-[10px]">
+                    <div class=""><input type="radio" class="w-[30px] h-[30px] flex justify-center items-center"></div>
+                    <div class="text-[18px] sm:text-xl">Sign me up to receive dining offers and news from this restaurant by email.</div>
+                </div>
+
+
+            </div>
+
+
+            <div class="w-full md:w-[45%] h-auto gap-10px space-y-2 py-[10px]">
+                <div class="text-2xl font-bold w-full flex justify-center items-center text-[#311F09]">Restaurant informations</div>
+                <div class="text-[17px]">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div> 
+                <div class="text-[17px]">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam.</div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+   </div>
+
+ <!-- Section 3 -->
+
+
+ <!-- Section 4 -->
+  <!-- POP 3 -->
+
+  <div class="pop3 w-[100%] h-auto  mb-[20px] py-[20px] absolute top-[100px] sm:top-[100px] md:top-[130px]  left-0 flex justify-center items-center">
+
+    <div class="inner_pop3 w-[90%] h-[100%] bg-white px-[10px]">
+
+        <div class="w-full h-auto my-[20px] flex justify-center items-center text-2xl">
+            <div class="">
+                <i class="ri-close-large-line bg-white p-[15px] rounded-[30px] pop3_close"></i>
+            </div>
+        </div>
+        
+        <div class="w-full h-[80px] hidden sm:flex justify-between items-center px-[10px]">
+            <div class="w-[150px] h-auto hidden sm:flex"><img src="./Asserts/nav_logo.svg"  class="w-[100%] h-auto"></div>
+            <div class="text-white flex justify-center items-center gap-[10px]">
+                <div class="bg-[#FF8A00] w-[100px] h-[40px] rounded-[20px] hidden sm:flex justify-center items-center">Sign in</div>
+                <div class="bg-[#3FA72F] w-[100px] h-[40px] rounded-[20px] hidden sm:flex justify-center items-center">Sign up</div>
+            </div>
+        </div>
+
+        <div class="w-full h-auto bg-[#3FC66E] px-[10px] text-white py-[10px]">
+            <div class="text-2xl sm:text-3xl font-bold text-white my-[10px]">Reservation has been confirmed</div>
+            
+            <div class="flex justify-start items-center gap-[10px_10px] mb-[10px]">
+                 <div class=""><img src="./Asserts/r11.svg" alt=""></div>
+                 <div class="text-[16px] sm:text-xl">The confirmation result has been sent to your email</div>
+                </div>
+                
+                <div class="flex justify-start items-center gap-[10px_10px] mb-[10px]">
+                    <div class=""><img src="./Asserts/r2.svg" alt=""></div>
+                    <div class="text-[16px] sm:text-xl">Booking ID : #123456</div>
+            </div>
+        </div>
+
+        <div class="flex justify-center items-center flex-wrap px-[10px]">
+
+            <div class=""><img src="./Asserts/pop3.svg" alt=""></div>
+            <div class="">
+                <div class="text-[#311F09] text-2xl font-bold sm:text-3xl">Reservation detail</div>
+                <div class="flex justify-start items-center my-[5px] font-semibold text-[#5C4529] sm:text-[18px] gap-[5px]">
+                    <div class=""><img src="./Asserts/icon1.svg" class="w-[27px] h-[27px]" alt=""></div>
+                    <div class="">2 people (Standar seating)</div>
+                </div>
+                <div class="flex justify-start items-center my-[5px] font-semibold text-[#5C4529] sm:text-[18px] gap-[5px]">
+                    <div class=""><img src="./Asserts/Icon2.svg" class="w-[27px] h-[27px]" alt=""></div>
+                    <div class="">04:30 pm</div>
+                </div>
+                <div class="flex justify-start items-center my-[5px] font-semibold text-[#5C4529] sm:text-[18px] gap-[5px]">
+                    <div class=""><img src="./Asserts/Icon3.svg" class="w-[27px] h-[27px]" alt=""></div>
+                    <div class="">Saturday, 28 february 2022</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="flex gap-[20px] pl-[20px] justify-center items-center mt-[20px]">
+            
+            <div class="yhyh hover:cursor-pointer w-[150px] h-[40px] flex justify-center items-center text-[#123968] font-semibold border-2 border-[#0074FF] rounded-[10px] gap-[10px]">
+                <div class="">Modify</div>
+                <div class="flex justify-center items-center"><img src="./Asserts/btn1.svg" class="w-[20px] h-[20px]" alt=""></div>
+             </div>        
+             
+             <div class="rtrt w-[150px] h-[40px] flex justify-center items-center text-[#FF0000] font-semibold border-2 border-[#FF0000] rounded-[10px] gap-[10px] hover:cursor-pointer">
+                 <div class="">Cancel</div>
+                 <div class="flex justify-center items-center"><img src="./Asserts/btn2.svg" class="w-[20px] h-[20px]" alt=""></div>
+                </div>        
+            </div>
+        <!-- </div> -->
+
+        <!-- </div> -->
+
+        <div class="">
+            <div class="text-2xl sm:text-3xl font-bold text-[#5C4529] text-center my-[10px]">Restaurant informations</div>
+            <div class="text-[#5C4529] text-[18px] flex justify-center flex-wrap sm:flex-nowrap items-center gap-[20px] text-justify px-[10px] py-[20px]">
+                <div class="">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
+                <div class="">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam.</div>
+            </div>
+        </div>
+
+        </div>
+
+        </div>
+  </div>
+ <!-- Section 4 -->
+
+ <!-- Section 5 -->
+  
+  <!-- POP4 -->
+
+  <div class="pop4 w-[100%] h-auto my-[20px]  mb-[20px] py-[20px] absolute top-[100px] sm:top-[100px] md:top-[130px]  left-0 flex justify-center items-center">
+
+    <div class="inner_pop3 w-[95%] h-[100%] bg-white py-[20px]">
+
+        <div class="w-full h-auto my-[20px] flex justify-center items-center text-2xl">
+            <div class="">
+                <i class="ri-close-large-line bg-white p-[15px] rounded-[30px] pop3_close"></i>
+            </div>
+        </div>
+        
+        <div class="w-full h-[80px] hidden sm:flex justify-between items-center px-[10px]">
+            <div class="w-[150px] h-auto hidden sm:flex"><img src="./Asserts/nav_logo.svg"  class="w-[100%] h-auto"></div>
+            <div class="text-white flex justify-center items-center gap-[10px]">
+                <div class="bg-[#FF8A00] w-[100px] h-[40px] rounded-[20px] hidden sm:flex justify-center items-center">Sign in</div>
+                <div class="bg-[#3FA72F] w-[100px] h-[40px] rounded-[20px] hidden sm:flex justify-center items-center">Sign up</div>
+            </div>
+        </div>
+
+        
+        <div class="w-full h-auto bg-[#FF8A00] px-[10px] text-white py-[10px]">
+            <div class="text-2xl sm:text-3xl font-bold text-white my-[10px]">Are you sure you want to cancel the reservation?</div>
+                
+                <div class="flex justify-start items-center gap-[10px_10px] mb-[10px]">
+                    <div class=""><img src="./Asserts/r2.svg" alt=""></div>
+                    <div class="text-[16px] sm:text-xl">Booking ID : #123456</div>
+            </div>
+        </div>
+
+
+        <div class="flex justify-center items-center flex-wrap px-[10px]">
+
+            <div class=""><img src="./Asserts/pop3.svg" alt=""></div>
+            <div class="">
+                <div class="text-[#311F09] text-2xl font-bold sm:text-3xl">Reservation detail</div>
+                <div class="flex justify-start items-center my-[5px] font-semibold text-[#5C4529] sm:text-[18px] gap-[5px]">
+                    <div class=""><img src="./Asserts/icon1.svg" class="w-[27px] h-[27px]" alt=""></div>
+                    <div class="">2 people (Standar seating)</div>
+                </div>
+                <div class="flex justify-start items-center my-[5px] font-semibold text-[#5C4529] sm:text-[18px] gap-[5px]">
+                    <div class=""><img src="./Asserts/Icon2.svg" class="w-[27px] h-[27px]" alt=""></div>
+                    <div class="">04:30 pm</div>
+                </div>
+                <div class="flex justify-start items-center my-[5px] font-semibold text-[#5C4529] sm:text-[18px] gap-[5px]">
+                    <div class=""><img src="./Asserts/Icon3.svg" class="w-[27px] h-[27px]" alt=""></div>
+                    <div class="">Saturday, 28 february 2022</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="btn1234 hover:cursor-pointer text-white bg-[#FF3838] w-[200px] rounded-[5px] flex justify-center items-center m-auto h-[45px] my-[10px] text-[18px] hover:bg-white hover:text-[#FF3838] border-2 border-transparent hover:border-[#FF3838] ">Cancel reservation</div>
+
+
+    </div>
+
+    </div>
+
+
+ <!-- Section 5 -->
+
+  <!-- Section 2 -->
+  <div class="w-full h-auto bg-[#311F09] flex justify-center items-start flex-wrap gap-[30px_10px] px-[15px] py-[40px]">
+
+    <div class="w-full sm:w-[260px] h-auto flex flex-col justify-center items-start px-[20px] py-[15px] gap-[20px]">
+      <div class=""><img src="./Asserts/foot_logo.svg" alt=""></div>
+      <div class="text-xl text-[#E3E2E0]">Viverra gravida morbi egestas facilisis tortor netus non duis tempor. </div>
+      <div class="flex justify-center items-center gap-[20px]">
+        <div class=""><img src="./Asserts/twitter.svg" class="w-[50px] h-[50px]" alt=""></div>
+        <div class=""><img src="./Asserts/Instagram.svg" class="w-[50px] h-[50px] alt=""></div>
+        <div class=""><img src="./Asserts/Facebook.svg" class="w-[50px] h-[50px] alt=""></div>
+      </div>
+    </div>
+
+
+    <div class="w-full sm:w-[260px] h-auto text-xl text-[#E3E2E0] flex justify-center items-start lg:items-center flex-col px-[20px] py-[15px] gap-[13px]">
+        <div class=" text-[#FF8A00] text-2xl font-semibold">Page</div>
+        <div class="">Home</div>
+        <div class="">Menu</div>
+        <div class="">Order online</div>
+        <div class="">Catering</div>
+        <div class="">Reservation</div>
+    </div>
+
+    <div class="w-full sm:w-[260px] h-auto text-xl text-[#E3E2E0] flex justify-center  items-start lg:items-center flex-col px-[20px] py-[15px] gap-[13px]">
+        <div class=" text-[#FF8A00] text-2xl font-semibold">Information</div>
+        <div class="">About us</div>
+        <div class="">Testimonial</div>
+        <div class="">Event</div>
+    </div>
+
+
+    <div class="w-full sm:w-[260px] h-auto text-xl text-[#E3E2E0] flex justify-center  items-start flex-col px-[20px] py-[15px] gap-[13px]">
+        <div class=" text-[#FF8A00] text-2xl font-semibold">Get in touch</div>
+        <div class="">3247 Johnson Ave, Bronx, NY 10463, Amerika Serikat</div>
+        <div class="">delizioso@gmail.com</div>
+        <div class="">+123 4567 8901</div>
+    </div>
+ </div>
+<!-- Section 2 -->
+
+<!-- Section 3 -->
+ <div class="w-full h-auto py-[20px] px-[12px] flex justify-center items-center text-center text-xl text-[#E3E2E0] bg-[#311F09]">Copyright &copy; 2022 Delizioso</div>
+<!-- Section 3 -->
+
+</body>
+<script>
+    jQuery.noConflict();
+    jQuery(document).ready(function($){
+
+        $(".side_navbar").hide();
+
+        $(".pop1").hide();
+        $(".pop2").hide();
+        $(".pop3").hide();
+        $(".pop4").hide();
+
+        $(".ri-function-line").click(function(){
+            $('.side_navbar').slideToggle(700);
+            $(this).toggleClass("ri-function-line  ri-function-fill");
+        })
+
+        $(".book_now").click(function(){
+            $(".pop1").show(300);
+        })
+
+
+        $(".rr123").click(function(){
+            $(".pop1").hide();
+            $(".pop2").hide(300);
+            $(".pop3").show(300);
+        })
+
+        $(".rr1").click(function(){
+            $(".pop1").hide();
+            $(".pop2").show();
+        })
+
+        $(".rtrt").click(function(){
+            $(".pop4").show(300);
+            $(".pop3").hide(300);
+        })
+
+        $(".yhyh").click(function(){
+            $(".pop3").hide();
+        })
+
+
+        $(".pop2_close").click(function(){
+            $(".pop2").hide(300);
+        })
+
+        $(".pop3_close").click(function(){
+            $(".pop3").hide(300);
+        })
+
+
+        $(".pop1_close").click(function(){
+            $(".pop1").hide(300);
+        })
+
+        $(".btn1234").click(function(){
+            $(".pop4").hide();
+        })
+
+    })
+</script>
+</html>
